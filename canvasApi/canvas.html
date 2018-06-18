@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Canvas API</title>
+        <style>
+            html,body {
+                width:100%;
+                height:100%;
+                margin:0;
+                padding:0;
+            }
+            #freqInput {
+                display:block;
+                position:fixed;
+                top:1em;
+                left:1em;
+                z-index:100;
+                width:50vw;
+            }
+            #canvas {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+        </style>
+        <script src="canvas.js"></script>
+        <script>
+            window.addEventListener("load",Demo)
+        </script>
+    </head>
+    <body>
+        <input type="range" value="0.5" max="1" min="0.001" step="0.001" id="freqInput">
+        <canvas id="canvas"></canvas>
+    </body>
+</html>
